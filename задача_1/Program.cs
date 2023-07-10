@@ -21,12 +21,12 @@ int GetLastDigit(int number1) // создаем метод, который вы�
     return number1 % 10;
 }
 
-void PrintNumber(int num1)
+void PrintNumber(int num1) // невозвращаемый метод, выводим на печать
 {
     Console.Write(num1 + "");
 }
 
-void ShowLargestDigit(int digit1, int digit2)
+void ShowLargestDigit(int digit1, int digit2) // невозвращаемы метод , получаем и сравниваем две цифры
 {
     if(digit1 > digit2)
     {
