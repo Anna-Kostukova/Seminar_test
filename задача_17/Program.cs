@@ -9,10 +9,6 @@ int Promt(string message) // создаем метод для работы с п
     return num; // возвращаем и сначала записываем X, потом Y
 }
 
-int x = Promt("Введите точку X: "); // работа с пользователем, вызываем метод Promt
-int y = Promt("Введите точку Y: ");
-GetResult(x, y);
-
 void GetResult(int X, int Y) // метод невозвращаемого метода
 {
     if (X > 0 && Y > 0)
@@ -32,3 +28,7 @@ void GetResult(int X, int Y) // метод невозвращаемого мет
         Console.WriteLine("IV четверть");
     }
 }
+
+int x = Promt("Введите точку X: "); // работа с пользователем, вызываем метод Promt
+int y = Promt("Введите точку Y: ");
+GetResult(x, y);
