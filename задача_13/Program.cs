@@ -32,6 +32,7 @@ int Prompt(string message)
 {
     Console.Clear();
     Console.WriteLine(message);
+    Console.WriteLine();
     int num = Math.Abs(Convert.ToInt32(Console.ReadLine()));
     return num;
 }
