@@ -23,5 +23,3 @@ void GetSum(int a)
 int A = Promt("Введите число ");
 GetSum(A);
 
-int B = GetNumber("Введите второе число: ");
-GetSumNumber(B);
