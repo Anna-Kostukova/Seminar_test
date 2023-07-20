@@ -14,17 +14,17 @@ int[] array = GetArray(sizeArray, min, max); // новый массив array к
 PrintArray(array);     // выводит на печать массив
 int[] resSum = GetSum(array);
 Console.WriteLine($"\nсумма положительных чисел = {resSum[0]} \nсумма отрицательных чисел = {resSum[1]}");
-                    // \n - перенос на новую строку
+// \n - перенос на новую строку
 
 int GetNum(string message) // метод работы с пользователем (на получение какого-то числа), 
 {
     Console.Write(message);                   // сообщение выводим на консоль
-    int num = int.Parse(Console.ReadLine()); // создаем число, запрашиваем у пользователя
+    int num = int.Parse(Console.ReadLine()!); // создаем число, запрашиваем у пользователя
     return num;                             // возвращаем наше число
 }
 
 int[] GetArray(int size, int minValue, int maxValue) // будет массив GetArray определенного размера
-                                                    // с заданным диапазоном
+                                                     // с заданным диапазоном
 {
     int[] result = new int[size];   // место хранения result 
     for (int i = 0; i < size; i++) // пока i меньше size
@@ -44,8 +44,8 @@ void PrintArray(int[] arr) // создаем метод печати PrintArray,
 
 int[] GetSum(int[] arr)
 {
-    int positiveSum = 0;  // одна переменная складывает положительные значения
-    int negativeSum = 0; // вторая переменная складывает все отрицательные значения
+    // int positiveSum = 0;  // одна переменная складывает положительные значения
+    // int negativeSum = 0; // вторая переменная складывает все отрицательные значения
     int[] res = new int[2];
     foreach (int el in arr) // цикл foreach записывает все элементы в el пока все элементы будут 
                             //идти по очереди по всему массиву - мы находимся в цикле 
